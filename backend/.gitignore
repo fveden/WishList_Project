@@ -23,7 +23,7 @@ archive.zip
 pyvenv.cfg
 /Scripts
 /Lib
-
+.env
 # vim temporary files
 *~
 .*.sw?
