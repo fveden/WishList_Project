@@ -15,6 +15,7 @@ class Settings:
     MODULE_LIST: list = [
         "models.user",
         "models.wishlist",
+        "models.admin",
     ]
 
     ALLOWED_CONTENT_TYPES: list = [
@@ -42,6 +43,7 @@ class Settings:
     SECRET_KEY: str = os.getenv("SECRET_KEY", default="AWESOME_SECRET_KEY")
     JWT_ACCESS_TOKEN_EXPIRATION = 1800
     JWT_REFRESH_TOKEN_EXPIRATION = 2592000
+    REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379/0")
 
 
 settings = Settings()
